@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean-reports": "rimraf ./allure-report && rimraf ./allure-results",
+    "execute-test": "cypress run --headed --env allure=true",
+    "get-report": "allure generate allure-results -o allure-report --clean",
+    "open-report": "allure open",
+    "test": "npm run clean-reports && npm run execute-test && npm run get-report && npm run open-report"
   },
   "repository": {
     "type": "git",
@@ -18,7 +22,10 @@
   },
   "homepage": "https://github.com/DiegoMitari/cypress-automation-project#readme",
   "devDependencies": {
-    "cypress": "^13.6.0",
+    "cypress": "^12.13.0",
     "install": "^0.13.0"
+  },
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0"
   }
 }
