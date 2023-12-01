@@ -12,4 +12,10 @@ export class LoginMethods {
   static clickOnLoginButton() {
     LoginElements.buttons.login.click()
   }
+
+  static login(username, password) {
+    this.insertUserName(username)
+    this.insertPassword(password)
+    this.clickOnLoginButton()
+  }
 }
