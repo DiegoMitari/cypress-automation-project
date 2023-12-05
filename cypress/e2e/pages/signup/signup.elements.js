@@ -1,0 +1,23 @@
+export class signUpElements {
+  static get textBoxes() {
+    return {
+      get username() {
+        cy.get('input#sign-username')
+      },
+      get password() {
+        cy.get('input#sign-password')
+      }
+    }
+  }
+
+  static get buttons() {
+    return {
+      get close() {
+        cy.contains('button', 'Close').eq(1)
+      },
+      get signup() {
+        cy.contains('button', 'Sign up')
+      }
+    }
+  }
+}
