@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Dec 13 23:24:41 PET 2023","Wed Dec 13 23:25:19 PET 2023","38000","","template spec","","","","passes",""
+"passed","Thu Dec 28 18:56:37 PET 2023","Thu Dec 28 18:57:33 PET 2023","56764","","template spec","","","","passes",""
