@@ -6,6 +6,7 @@ module.exports = defineConfig({
     "openMode": 2,   // Número de intentos para comandos de apertura (visit, get, etc.)
     "runMode": 3     // Número de intentos para comandos durante la ejecución de la prueba
   } ,
+  video: false,
   e2e: {
     setupNodeEvents(on, config) {
       allureWriter(on, config);
